@@ -54,6 +54,7 @@ body {
   }
   
   .caption {
+    background-color: dodgerblue;
     font-size: smaller;
     color: grey;
   }
