@@ -22,7 +22,7 @@ function addressBuilder() {
 	}
 	
 	//Process the values into the U.S. address format.
-	let address = jsCity + ", " + jsState + " " + jsZip;
+	let address = jsCity + ",<br/>" + jsState + " " + jsZip;
 	
 	//Outputs the address already formatted.
 	document.getElementById("output").innerHTML = address;
