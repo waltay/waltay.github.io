@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CIT 160 - Introduction to Programming - Walter Taylor</title>
+        <meta name="description" content="This page contains the assignment to help the user practice addition problems.">
+        <link rel="stylesheet" href="../css/program6-2.css">
+    </head>
+
+    <body onload="generateProblem()">
+        <header>
+            <h1>Week 6: Selection Structures</h1>
+            <h2>Walter Taylor</h2>
+        </header>
+
+        <main>
+            <h3>Addition Problems</h3>
+            
+            <label>
+                <span id="Problem"></span>
+                <input type="number" id="solution"></input>
+            </label>
+            
+            <label>
+                <button onclick="checkAnswer()">Check Answer</button>
+            </label>
+            
+            <hr>
+                
+            <span id="output"></span>    
+        </main>
+        
+        <footer>
+            &copy;2019 &bull; Walter Taylor &bull; BYU-Idaho &bull; CIT 160 &bull; <span id="currentdate"></span>
+        </footer>
+
+        <script src="../js/program6-2.js"></script>
+    </body>
+</html>
