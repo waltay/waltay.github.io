@@ -20,6 +20,10 @@ function timesTable() {
 		alert("Please choose a positive integer from 1 - 10.");
 		return;
 	}
+	else if(userNum == ""){
+		alert("Please choose a positive integer from 1 - 10.");
+		return;
+	}
 	
     /*
     A pre-test loop which counts from 1 to 12 multiplying the user-given number 
