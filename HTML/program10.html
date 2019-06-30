@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CIT 160 - Introduction to Programming - Walter Taylor</title>
+        <meta name="description" content="This page contains the assignment that calculates the Wind Chill Factor based on user input.">
+        <link rel="stylesheet" href="../css/program5-2.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Week 10: Functions</h1>
+            <h2>Walter Taylor</h2>
+        </header>
+
+        <main>
+            <h3>Wind Chill Factor</h3>
+            
+            <label>
+                Temperature (F&deg):
+                <input type="number" id="temperature" step="any" max="50">
+            </label>
+            
+            <label>
+                Wind Speed (mph):
+                <input type="number" id="windspeed" step="any" min="3">
+            </label>
+            
+            <label>
+                <button onclick="doInputOutput()">Calculate Wind Chill Factor</button>
+            </label>
+            
+            <hr>
+            
+            <label>
+                <span id="output"></span>
+            </label>
+        </main>
+        
+        <footer>
+            &copy;2019 &bull; Walter Taylor &bull; BYU-Idaho &bull; CIT 160 &bull; <span id="currentdate"></span>
+        </footer>
+
+        <script src="../js/program10.js"></script>
+    </body>
+
+
+</html>
