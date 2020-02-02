@@ -61,13 +61,10 @@ body {
   }
   
   .rightalign {
-    float: right;
     width: 150px;
     height: auto;
     box-shadow: 0 0 30px #777;
     margin-bottom: 5px;
-    margin-right: 1.5em;
-    margin-left: 0;
   }
   
   li{

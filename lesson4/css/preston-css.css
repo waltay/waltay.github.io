@@ -1,0 +1,141 @@
+header{
+    background-color: darkcyan;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#logo{
+    width: 200px;
+    float: left;
+    margin-right: 50px;
+}
+
+header h1{
+    font-family: 'Cinzel';
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+header p{
+    font-family: Arial;
+    font-size: 1em;
+    margin-top: 0px;
+}
+
+nav{
+    background-color: rgba(117, 202, 195, 0.911);
+}
+
+nav ul{
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    display: flex;
+    list-style-type: none;
+}
+
+nav li:first-child{
+    display: none;
+}
+
+nav li{
+    display: block;
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+main, footer{
+    width: 75%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: darkcyan;
+    text-align: center;
+}
+
+footer p{
+    padding-top: 10px;
+}
+
+footer span{
+    padding-bottom: 10px;
+}
+
+main h1{
+    text-align: center;
+}
+
+.main-content{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: black dashed;
+    background-color: lightgray;
+}
+
+.main-content p{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media (max-width: 60em){
+    .main-content{
+        background-color: rgba(117, 202, 195, 0.911);
+    }
+
+    header h1{
+        font-size: 2em;
+    }
+
+    header p{
+        font-size: 1.5em;
+    }
+
+    #logo{
+        width: 100px;
+        margin-right: 25px;
+    }
+
+    #header-text{
+        align-content: center;
+    }
+}
+
+@media (max-width: 32.5em){
+    header h1{
+        font-size: 1.5em;
+    }
+
+    header p{
+        font-size: 1em;
+    }
+
+    #logo{
+        margin-right: 10px;
+    }
+
+    .navigation li:first-child{
+        display: block;
+    }
+
+    .navigation li{
+        display: none;
+    }
+
+    .navigation a{
+        display: block;
+    }
+
+    .responsive li{
+        display: block;
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}
