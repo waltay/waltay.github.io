@@ -62,7 +62,7 @@ nav{
 }
 
 main, footer{
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -81,19 +81,109 @@ main h1{
     text-align: center;
 }
 
-.main-content{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border: black dashed;
-    background-color: lightgray;
+.hero-summary img{
+    width: 100%;
 }
 
-.main-content p{
-    padding-left: 5px;
-    padding-right: 5px;
+.hero-summary{
+    position: relative;
 }
 
-@media only screen and (min-width: 32.5em) {
+#weather-summary{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+#weather-summary h4{
+    text-align: center;
+}
+
+.left-column{
+    text-align: left;
+    padding-right: 5%;
+}
+
+.right-column{
+    text-align: right;
+}
+
+#forecast-table{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    border: black solid thin;
+}
+
+#forecast-table td{
+    color: darkcyan;
+    font-weight: bold;
+}
+
+#forecast-table img{
+    width: 70px;
+}
+
+#forecast-table th{
+    padding-top: 1%;
+    color: rgb(2, 68, 68);
+}
+
+.forecast{
+    display: none;
+    background-color: darkcyan;
+    text-align: center;
+    padding: 2%;
+    margin: 10px 0 10px 0;
+}
+
+.forecast h2{
+    color: black;
+    margin-top: 0;
+}
+
+article{
+    padding: 0.5%;
+}
+
+#article-image{
+    width: 95%;
+    margin: auto;
+}
+
+article h1{
+    font-family: 'Cinzel';
+    text-align: left;
+}
+
+#article-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.contact-container{
+    background-color: rgba(117, 202, 195, 0.911);
+    padding: 0.5%;
+    text-align: center;
+}
+
+#contact-info img{
+    width: 60px;
+    margin: 0 5px 0 5px;
+}
+
+#preston-map-container{
+    display: none;
+    margin-bottom: 1px;
+}
+
+@media only screen and (min-width: 37.5em) {
 	.navigation {
 		display: flex;
 	}
@@ -107,10 +197,6 @@ main h1{
 	
 	.navigation li:first-child {
 		display: none;
-    }
-    
-    .main-content{
-        background-color: rgba(117, 202, 195, 0.911);
     }
 
     header h1{
@@ -129,6 +215,49 @@ main h1{
     #header-text{
         align-content: center;
     }
+
+    main, footer{
+        width: 82%;
+    }
+    
+
+    #weather-summary td{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .forecast{
+        display: block;
+    }
+
+    #article-container{
+        display: block;
+    }
+
+    #article-image{
+        float: right;
+        margin-left: 2%;
+        margin-bottom: 2%;
+        width: 50%;
+    }
+
+    .contact-container{
+        padding: 1.5%;
+    }
+
+    #preston-map-container{
+        display: block;
+        float: left;
+        width: 50%;
+    }
+
+    #preston-map{
+        width: 100%;
+    }
+
+    #contact-info{
+        overflow: hidden;
+    }
 }
 
 @media only screen and (min-width: 60em){
@@ -137,15 +266,23 @@ main h1{
         margin-right: 7%;
     }
 
-    .main-content{
-        background-color: lightgray;
-    }
-
     header h1{
         font-size: 3em;
     }
 
     header p{
         font-size: 1.75em;
+    }
+
+    main, footer{
+        width: 800px;
+    }
+
+    #article-image{
+        width: 40%;
+    }
+
+    .contact-container{
+        padding: 3%;
     }
 }
