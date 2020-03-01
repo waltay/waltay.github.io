@@ -1,0 +1,32 @@
+h1{
+    font-family: 'Cinzel';
+    text-align: center;
+}
+
+header{
+    background-color: darkcyan;
+    padding: 5px;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+#image-grid{
+    margin-top: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(6, 400px);
+    grid-gap: 20px;
+}
+
+img[data-src]{
+    filter: blur(0.3em);
+}
+
+img{
+    filter: blur(0em);
+    transition: filter 1s;
+}
