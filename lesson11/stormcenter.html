@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Storm Center - Walter Taylor</title>
+        <meta name="description" content="This page serves as Walter Taylor's Storm Center Assignment for CIT 230 - Web Frontend Development at BYU-Idaho">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/stormcenter.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/weather-logo.jpeg" alt="logo" id="logo">
+            <div id="header-text">
+                <h1>The Weather Pitstop</h1>
+                <p>Your one stop for all things Weather</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li class="active"><a href="#">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Report a Storm / Unusual Weather</h1>
+            <form method="GET" action="thanks.html">
+                <fieldset>
+                    <legend>Reporter Information</legend>
+                    <label>Full Name*<input type="text" class="top" name="fullName" pattern="[A-Za-z]{5,}" required></label>
+                    <label>Email<input type="email" class="top" placeholder="example@example.com" name="email"></label>
+                    <label>Phone No.*<input type="tel" class="top" required name="phone"></label>
+                    <label>Zip Code*<input type="number" class="top" required name="zipCode"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Details</legend>
+                    <label>Storm Date<input type="date" class="top"></label>
+                    <label>
+                        Storm Type
+                        <input list="stormTypeList" class="top" name="stormType" placeholder="Choose a Storm Type">
+
+                        <datalist id="stormTypeList">
+                            <option value="Flash Flood">Flash Flood</option>
+                            <option value="Hail">Hail</option>
+                            <option value="Hurricane">Hurricane</option>
+                            <option value="Thunderstorm">Thunderstorm</option>
+                            <option value="Tornado">Tornado</option>
+                        </datalist>
+                    </label>
+                    <label>
+                        Storm Severity (1 - 10): <span id="rating">5</span>
+                        <input type="range" class="top" step="1" min="1" max="10" name="severity" value="5" 
+                        oninput="updateRating(this.value)" onchange="updateRating(this.value)">
+                    </label>
+                    <label>Storm Region
+                        <select name="stormRegion" class="top">
+                            <option disabled selected>Select Region</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    Are You in Danger?
+                    <label class="sbs"><input type="radio" name="danger" value="Yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger" value="No"> No</label>
+                    <label class="sbs"><input type="radio" name="danger" value="Maybe"> Maybe</label>
+                    <label>
+                        Additional Comments
+                        <textarea class="top" id="comments" name="addComments" placeholder="Additional Information..."></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" name="submitButton" class="top" id="button" value="Report Storm">
+            </form>
+        </main>
+
+        <footer>
+            <P>&copy;The Weather Pitstop | Walter Taylor</P>
+            <span id="current-date"></span>
+        </footer>
+
+        <script src="js/stormcenter.js"></script>
+    </body>
+</html>

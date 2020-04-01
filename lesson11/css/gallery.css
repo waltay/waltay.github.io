@@ -1,0 +1,186 @@
+body{
+    font-family: Arial;
+}
+
+header{
+    background-color: darkcyan;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+header h1{
+    font-family: 'Cinzel';
+    font-size: 1.5em;
+    color: antiquewhite;
+    margin-bottom: 0px;
+}
+
+h1{
+    font-family: 'Cinzel';
+}
+
+header p{
+    font-size: 1em;
+    margin-top: 0px;
+    color: black;
+}
+
+#logo{
+    width: 100px;
+    margin-right: 2%;
+}
+
+nav{
+    background-color: rgba(117, 202, 195, 0.911);
+}
+
+.navigation{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a:hover{
+    background-color: rgb(14, 155, 155);
+    color: antiquewhite;
+}
+
+.active{
+    background-color: rgb(14, 155, 155);
+    color: antiquewhite;
+}
+
+.responsive li {
+	display: block;
+}
+
+footer p{
+    margin: 0;
+}
+
+main, footer{
+    width: 95%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: darkcyan;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+#gallery-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+}
+
+.grid-images{
+    width: 100%;
+}
+
+
+#gallery-grid p{
+    margin: 5px 0 5px 0;
+    padding-left: 5px;
+    background-color: white;
+    font-style: italic;
+}
+
+picture{
+    box-shadow: 0 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+img[data-src]{
+    filter: blur(0.3em);
+}
+
+img{
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+@media only screen and (min-width: 37.5em) {
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		text-align: center;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+    }
+
+    header h1{
+        font-size: 2em;
+    }
+
+    header p{
+        font-size: 1.5em;
+    }
+
+    #logo{
+        width: 100px;
+        margin-right: 5%;
+    }
+
+    #header-text{
+        align-content: center;
+    }
+
+    #gallery-grid{
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    #logo{
+        width: 200px;
+        margin-right: 7%;
+    }
+
+    header h1{
+        font-size: 3em;
+    }
+
+    header p{
+        font-size: 1.75em;
+    }
+
+    #gallery-grid{
+        grid-template-columns: 3fr 3fr 3fr;
+    }
+
+    picture{
+        transition: box-shadow .5s;
+    }
+
+    picture:hover{
+        box-shadow: 0 7px 7px 7px rgba(0,0,0,0.6);
+    }
+}

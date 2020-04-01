@@ -1,0 +1,234 @@
+body{
+    font-family: Arial;
+}
+
+header{
+    background-color: darkcyan;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+header h1{
+    font-family: 'Cinzel';
+    font-size: 1.5em;
+    color: antiquewhite;
+    margin-bottom: 0px;
+}
+
+h1{
+    font-family: 'Cinzel';
+}
+
+header p{
+    font-size: 1em;
+    margin-top: 0px;
+    color: black;
+}
+
+#logo{
+    width: 100px;
+    margin-right: 2%;
+}
+
+nav{
+    background-color: rgba(117, 202, 195, 0.911);
+}
+
+.navigation{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a:hover{
+    background-color: rgb(14, 155, 155);
+    color: antiquewhite;
+}
+
+.active{
+    background-color: rgb(14, 155, 155);
+    color: antiquewhite;
+}
+
+.responsive li {
+	display: block;
+}
+
+footer p{
+    margin: 0;
+}
+
+main, footer{
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer{
+    background-color: darkcyan;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+    padding-left: 1.5%;
+}
+
+.top{
+    display: block;
+    margin-top: 5px;
+    width: 95%;
+    height: 40px;
+}
+
+fieldset{
+    margin-top: 20px;
+    border: solid darkcyan;
+}
+
+.sbs{
+    margin-top: 10px;
+}
+
+#comments{
+    height: 10rem;
+}
+
+#button{
+    align-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+legend{
+    margin: 0 5px 0 5px;
+    padding: 0 10px 0 10px;
+    font-weight: bold;
+}
+
+#thanksNotice{
+    background-color: lightgray;
+    width: 100%;
+    padding: 5% 0 5% 0;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#thanksNotice h1, p{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+#returnButton{
+    background-color: rgb(14, 155, 155);
+    width: 15rem;
+    height: 3.5rem;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+}
+
+#returnButton:hover{
+    background-color: darkcyan;
+    color: antiquewhite;
+}
+
+@media only screen and (min-width: 37.5em) {
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+	.navigation li a {
+		text-align: center;
+	}
+	
+	.navigation li:first-child {
+		display: none;
+    }
+
+    header h1{
+        font-size: 2em;
+    }
+
+    header p{
+        font-size: 1.5em;
+    }
+
+    #logo{
+        width: 100px;
+        margin-right: 5%;
+    }
+
+    #header-text{
+        align-content: center;
+    }
+
+    main, footer{
+        width: 82%;
+    }
+
+    #thanksNotice{
+        width: 70%;
+    }
+
+    .top{
+        width: 75%;
+    }
+
+    #button{
+        width: 10rem;
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    #logo{
+        width: 200px;
+        margin-right: 7%;
+    }
+
+    header h1{
+        font-size: 3em;
+    }
+
+    header p{
+        font-size: 1.75em;
+    }
+
+    main, footer{
+        width: 70%;
+    }
+
+    #thanksNotice{
+        width: 50%;
+    }
+
+    .top{
+        width: 50%;
+    }
+}
