@@ -1,5 +1,5 @@
-const apiURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=2ddcd5a3794e5fbc35968fc620259c8c';
-const apiForecastURL = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=2ddcd5a3794e5fbc35968fc620259c8c';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=2ddcd5a3794e5fbc35968fc620259c8c';
+const apiForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=2ddcd5a3794e5fbc35968fc620259c8c';
 
 //Obtains and displays the data for the Weather Summary
 fetch(apiURL)
