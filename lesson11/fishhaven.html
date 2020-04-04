@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Preston Town Page - Walter Taylor</title>
+        <meta name="description" content="This page serves as Walter Taylor's Preston Town Page Assignment for CIT 230 - Web Frontend Development at BYU-Idaho">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/towns_styling.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    </head>
+
+    <body>
+        <header>
+            <img src="images/weather-logo.jpeg" alt="logo" id="logo">
+            <div id="header-text">
+                <h1>The Weather Pitstop</h1>
+                <p>Your one stop for all things Weather</p>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="active"><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Fish Haven, Idaho</h1>
+            <div class="hero-summary">
+                <picture>
+                    <source media="(max-width: 37.4em)" srcset="images/fish_haven_500.jpg">
+                    <source media="(max-width: 59.9em)" srcset="images/fish_haven_800.jpg">
+                    <img src="images/fish_haven_1100.jpg" alt="Bear Lake">
+                </picture>
+                <div id="weather-summary">
+                    <h4>Weather Summary</h4>
+                    <table>
+                        <tr>
+                            <td class="left-column">Currently:</td>
+                            <td class="right-column"><span id="currentDesc"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="left-column">Temperature:</td>
+                            <td class="right-column"><span id="temp"></span>°F</td>
+                        </tr>
+                        <tr>
+                            <td class="left-column">Wind Chill:</td>
+                            <td class="right-column"><span id="wind-chill"></span>°F</td>
+                        </tr>
+                        <tr>
+                            <td class="left-column">Humidity:</td>
+                            <td class="right-column"><span id="humidity"></span>%</td>
+                        </tr>
+                        <tr>
+                            <td class="left-column">Wind Speed:</td>
+                            <td class="right-column"><span id="windspeed"></span> mph</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="forecast">
+                <h2>5 Day Forecast</h2>
+                <table id="forecast-table">
+                    <tr>
+                        <th><span id="day1"></span></th>
+                        <th><span id="day2"></span></th>
+                        <th><span id="day3"></span></th>
+                        <th><span id="day4"></span></th>
+                        <th><span id="day5"></span></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img id="image1">
+                            <p><span id="temp1"></span>°F</p>
+                        </td>
+                        <td>
+                            <img id="image2">
+                            <p><span id="temp2"></span>°F</p>
+                        </td>
+                        <td>
+                            <img id="image3">
+                            <p><span id="temp3"></span>°F</p>
+                        </td>
+                        <td>
+                            <img id="image4">
+                            <p><span id="temp4"></span>°F</p>
+                        </td>
+                        <td>
+                            <img id="image5">
+                            <p><span id="temp5"></span>°F</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <section id="event-container">
+                <h1>Upcoming Events:</h1>
+                <hr>
+                <div id="events"></div>
+            </section>
+
+            <article>
+                <h1>Bear Lake</h1>
+                <h3>By Bear Fish</h3>
+                <section id="article-container">
+                    <img src="images/fish-haven_article.jpg" alt="Jet Skiing on Lake" id="article-image">
+                    <div id="article-content">
+                        <p>
+                            When you come to Fish Haven, you can't miss out on Bear Lake! Literally, we're right on the 
+                            shore of it. There's plenty of activities you can participate at or around Bear Lake any time
+                            of the year. You can dive into the intense turquoise blue water that is Bear Lake, jet ski, go 
+                            sailing, boating, fish, swim and play on our sandy beaches. Did you know that Bear Lake is known
+                            as the “Caribbean of the Rockies”. During winter, you can go snowmobiling, ice fishing and snow 
+                            skiing. Plus, any time of the year you can go hiking on the amazing trails surrounding this 
+                            landscape and enjoy of the amazing fauna that inhabits by bird watching and running into the 
+                            wildlife. We even have locations where you can go golfing in this beautiful location. Don't 
+                            miss out on this incredible experience and visit Bear Lake.
+                        </p>
+                    </div>
+                </section>
+            </article>
+            <div class="contact-container">
+                <div id="preston-map-container">
+                    <img src="images/preston-map.jpg" alt="Map" id="preston-map">
+                </div>
+                <div id="contact-info">
+                    <h3>The Weather Pitstop</h3>
+                    <p>001 Preston Boulevard</p>
+                    <p>Preston, ID 83263</p>
+                    <p>☏ (111)012-4000</p>
+                    <a href="https://www.facebook.com/"><img src="images/Facebook-128.png" alt="Facebook Icon"></a>
+                    <a href="https://www.instagram.com/"><img src="images/198px-Instagram_logo_2016.svg.png" alt="Instagram Icon"></a>
+                    <a href="https://twitter.com/"><img src="images/twitter-icon.jpg" alt="Twitter Icon"></a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <P>&copy;The Weather Pitstop | Walter Taylor | Data from <a href="https://openweathermap.org/" target="_blank">Open Weather Map</a></P>
+            <span id="current-date"></span>
+        </footer>
+
+        <script src="js/fishhaven.js"></script>
+    </body>
+
+</html>

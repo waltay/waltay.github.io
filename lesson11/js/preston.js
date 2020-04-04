@@ -180,3 +180,27 @@ fetch(apiURL)
   function toggleMenu() {
       document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
   }
+
+  //Add upcoming events
+  const eventURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+  fetch(eventURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    const townInfo = jsObject['towns'];
+
+    for(i = 0; i < townInfo.length; i++){
+
+        if(townInfo[i].name == 'Preston'){
+
+            for(i2 = 0; i2 < townInfo[i].events.length; i2++){
+                let p = document.createElement('p');
+                p.textContent = townInfo[i].events[i2];
+
+                document.querySelector('div#events').appendChild(p);
+            }
+
+        }
+
+    }
+  });

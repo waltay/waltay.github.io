@@ -6,7 +6,7 @@
         <title>Preston Town Page - Walter Taylor</title>
         <meta name="description" content="This page serves as Walter Taylor's Preston Town Page Assignment for CIT 230 - Web Frontend Development at BYU-Idaho">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel="stylesheet" href="css/preston.css">
+        <link rel="stylesheet" href="css/towns_styling.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
     </head>
 
@@ -24,20 +24,20 @@
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="#">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
 
         <main>
-            <h1>Preston Idaho</h1>
+            <h1>Preston, Idaho</h1>
             <div class="hero-summary">
                 <picture>
-                    <source media="(max-width: 37.4em)" srcset="images/hero_500.jpg">
-                    <source media="(max-width: 59.9em)" srcset="images/hero_800.jpg">
-                    <img src="images/hero_1100.jpg" alt="Idaho Landscape">
+                    <source media="(max-width: 37.4em)" srcset="images/preston_500.jpg">
+                    <source media="(max-width: 59.9em)" srcset="images/preston-800.jpg">
+                    <img src="images/preston_1100.jpg" alt="Idaho Landscape">
                 </picture>
                 <div id="weather-summary">
                     <h4>Weather Summary</h4>
@@ -99,22 +99,30 @@
                     </tr>
                 </table>
             </div>
+
+            <section id="event-container">
+                <h1>Upcoming Events:</h1>
+                <hr>
+                <div id="events"></div>
+            </section>
+
             <article>
-                <h1>Article</h1>
-                <h3>By Author</h3>
+                <h1>When in Preston...</h1>
+                <h3>By Activarios Prestonus</h3>
                 <section id="article-container">
-                    <img src="images/article-image.jpg" alt="Clouds with Thunder" id="article-image">
+                    <img src="images/preston_article.jpg" alt="Preston Senior HighSchool" id="article-image">
                     <div id="article-content">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                            et dolore magna aliqua. Viverra tellus in hac habitasse platea dictumst. Lorem ipsum dolor sit amet 
-                            consectetur adipiscing elit ut. Vitae nunc sed velit dignissim sodales ut. Amet est placerat in egestas 
-                            erat imperdiet sed euismod nisi. In hac habitasse platea dictumst quisque. Gravida arcu ac tortor 
-                            dignissim convallis aenean et. Nunc vel risus commodo viverra maecenas accumsan lacus. Dolor sit amet 
-                            consectetur adipiscing elit. Mauris augue neque gravida in fermentum. Sit amet nulla facilisi morbi tempus 
-                            iaculis urna. Faucibus in ornare quam viverra orci sagittis. Dui vivamus arcu felis bibendum ut tristique 
-                            et egestas. Mollis aliquam ut porttitor leo. Non arcu risus quis varius quam quisque. Iaculis nunc sed augue 
-                            lacus viverra.
+                            Welcome to Preston! Whether you are visiting or a local resident, there are plenty of 
+                            places to visit and activities to do. Here are some of the best ones you should definitely
+                            not miss out. First, if you're an adventurer who likes to connect with nature and enjoy being
+                            outdoors, we have several trails you can hike. Two of the best that you should definitely give
+                            a try are the "Willow Flat Springs Trail" and the "Maple Creek Spring" trail. If you're looking for 
+                            aquatic adventures, head on over to Riverdale Resort Hot Springs. It includes a large open 
+                            swimming pool and hot tubs fed by natural hot water along with some water slides. Finally, if 
+                            you really enjoyed Napoleon Dynamite, Preston is where it all happened. You could plan a scavenger 
+                            hunt to visit all the iconic locations that appear in the movie. Make sure to check the weather in 
+                            advance to planning any of your activities to make sure your fun doesn't get spoiled.
                         </p>
                     </div>
                 </section>
