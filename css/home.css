@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
     font-family: Arial, sans-serif;
-    width: 75%;
+    width: 85%;
     margin: auto;
   }
   
@@ -11,12 +11,12 @@ body {
   }
 
   h1{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   h2 {
     color: rgb(5, 92, 92);
-    font-size: 2rem;
+    font-size: 1rem;
     margin-top: .5em;
     border-bottom: black solid;
   }
