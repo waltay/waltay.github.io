@@ -4,4 +4,12 @@
         margin-right: 1.5em;
         margin-left: 1em;
     }
+
+    body {
+        width: 50%;
+    }
+
+    h1{
+        font-size: 3.5rem;
+      }
 }
