@@ -13,7 +13,7 @@ else{
 }
 
 if((lastUpdate.getDate() + 1) < 10){
-    updateDay = "0" + (lastUpdate.getDate() + 1);
+    updateDay = "0" + (lastUpdate.getDate());
 }
 else{
     updateDay = lastUpdate.getDate();
