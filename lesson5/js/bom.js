@@ -5,7 +5,7 @@ const ulist = document.querySelector('.list');
 button.addEventListener('click', () => {
     let li = document.createElement('li');
     let deletebutton =document.createElement('button');
-    li.textContent = input.nodeValue;
+    li.textContent = input.value;
     deletebutton.textContent = '❌';
 
     li.append(deletebutton);
