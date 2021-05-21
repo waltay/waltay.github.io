@@ -78,7 +78,7 @@ function toggleMenu() {
 
 const notice = document.querySelector('#notice');
 
-if(noticeDay == 4){
+if(noticeDay == 5){
     notice.style.display = "block";
 }
 else{
