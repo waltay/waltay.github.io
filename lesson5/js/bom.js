@@ -1,4 +1,4 @@
-const input = document.querySelector('#favchap');
+const input = document.querySelector('input');
 const button = document.querySelector('button');
 const ulist = document.querySelector('.list');
 
