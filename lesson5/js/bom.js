@@ -17,6 +17,6 @@ button.addEventListener('click', () => {
         input.focus();    
     });
 
-    input.textContent = '';
+    input.value = '';
     input.focus();
 });
