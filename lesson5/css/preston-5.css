@@ -183,6 +183,11 @@ article h1{
     margin-bottom: 1px;
 }
 
+#notice {
+    background-color: #DB1F48;
+    color: #004369;
+}
+
 @media only screen and (min-width: 37.5em) {
 	.navigation {
 		display: flex;

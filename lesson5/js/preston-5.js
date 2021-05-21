@@ -3,6 +3,7 @@ let year = d.getFullYear();
 let month = d.getMonth() + 1;
 let date = d.getDate();
 let day = d.getDay();
+const noticeDay = day;
 
 switch(month){
     case 1:
@@ -67,10 +68,19 @@ switch(day){
         break;
 }
 
-let currentDate = day + ", " + date + " " + month + " " + year;
+let currentDate = day + " " + date + ", " + month + " " + year;
 
 document.getElementById("current-date").innerHTML = currentDate;
 
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
+
+const notice = document.querySelector('#notice');
+
+if(noticeDay == 4){
+    notice.style.display = "block";
+}
+else{
+    notice.style.display = "none";
 }
