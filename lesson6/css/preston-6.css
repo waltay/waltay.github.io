@@ -188,6 +188,16 @@ article h1{
     margin-bottom: 1px;
 }
 
+#notice {
+    background-color: #DB1F48;
+    color: #faebd7;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    font-size: 1em;
+}
+
 @media only screen and (min-width: 37.5em) {
 	.navigation {
 		display: flex;
@@ -262,6 +272,10 @@ article h1{
 
     #contact-info{
         overflow: hidden;
+    }
+
+    #notice {
+        font-size: 1.5em;
     }
 }
 

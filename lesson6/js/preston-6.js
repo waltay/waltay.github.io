@@ -74,3 +74,12 @@ document.getElementById("current-date").innerHTML = currentDate;
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
+
+const notice = document.querySelector('#notice');
+
+if(noticeDay == 5){
+    notice.style.display = "block";
+}
+else{
+    notice.style.display = "none";
+}
