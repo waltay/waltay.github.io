@@ -3,6 +3,7 @@ let year = d.getFullYear();
 let month = d.getMonth() + 1;
 let date = d.getDate();
 let day = d.getDay();
+const noticeDay = day;
 
 switch(month){
     case 1:
