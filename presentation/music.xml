@@ -2,5 +2,16 @@
 <music>
     <artist>
         <name>Jason Mraz</name>
+        <disc>Mr. A-Z</disc>
+        <disc>We Sing. We Dance. We Steal Things.</disc>
+        <disc>Love is A Four-Letter Word</disc>
+    </artist>
+    <artist>
+        <name>Los Claxons</name>
+        <discography>
+            <disc>Los Claxons</disc>
+            <disc>Camino A Encontrarte</disc>
+            <disc>Sin Ganga</disc>
+        </discography>
     </artist>
 </music>

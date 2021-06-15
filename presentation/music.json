@@ -1,7 +1,20 @@
 {
     "artist": [
         {
-            "name": "Jason Mraz"
+            "name": "Jason Mraz",
+            "discs": [
+                "Mr. A-Z",
+                "We Sing. We Dance. We Steal Things",
+                "Love is A Four-Letter Word"
+            ]
+        },
+        {
+            "name": "Los Claxons",
+            "discs": [
+                "Los Claxons",
+                "Camino a Encontrarte",
+                "Sin Ganga"
+            ]
         }
     ]
 }
