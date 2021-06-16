@@ -21,9 +21,9 @@ fetch(requestURL)
             tName = "Fish Haven"
         }
 
-        for(i = 0; i < townInfo.length; i++){
+        for(counter = 0; counter < townInfo.length; counter++){
 
-            if(townInfo[i].name == tName){
+            if(townInfo[counter].name == tName){
 
                 let card = document.createElement('section');
                 let info = document.createElement('div');
@@ -35,11 +35,11 @@ fetch(requestURL)
                 let image = document.createElement('img');
 
                 info.setAttribute('class', 'infoContainer');
-                h2.textContent = townInfo[i].name;
-                h5.textContent = townInfo[i].motto;
-                p.textContent = 'Year Founded: ' + townInfo[i].yearFounded;
-                p2.textContent = 'Population: ' + townInfo[i].currentPopulation;
-                p3.textContent = 'Annual Rainfall: ' + townInfo[i].averageRainfall;
+                h2.textContent = townInfo[counter].name;
+                h5.textContent = townInfo[counter].motto;
+                p.textContent = 'Year Founded: ' + townInfo[counter].yearFounded;
+                p2.textContent = 'Population: ' + townInfo[counter].currentPopulation;
+                p3.textContent = 'Annual Rainfall: ' + townInfo[counter].averageRainfall;
 
                 info.appendChild(h2);
                 info.appendChild(h5);
@@ -47,17 +47,17 @@ fetch(requestURL)
                 info.appendChild(p2);
                 info.appendChild(p3);
                 
-                if(townInfo[i].name == 'Fish Haven'){
+                if(tName == 'Fish Haven'){
                     image.setAttribute('src', 'images/rsz_fishhaven.jpg');
                     image.setAttribute('alt', 'Fish Haven');
                     image.setAttribute('class', 'right');
                 }
-                else if(townInfo[i].name == 'Preston'){
+                else if(tName == 'Preston'){
                     image.setAttribute('src', 'images/rsz_preston.jpg');
                     image.setAttribute('alt', 'Preston');
                     card.setAttribute('class', 'right');
                 }
-                else if(townInfo[i].name == 'Soda Springs'){
+                else if(tName == 'Soda Springs'){
                     image.setAttribute('src', 'images/rsz_sodasprings.jpg');
                     image.setAttribute('alt', 'Soda Springs');
                     image.setAttribute('class', 'left');
