@@ -53,10 +53,18 @@
         </main>
 
         <footer>
-            <P>&copy;The Weather Pitstop | Walter Taylor</P>
+            <P>&copy;<span id="copyYear"></span> The Weather Pitstop | Walter Taylor | <a href="https://www.byui.edu/online">BYU-I Online Learning</a></P>
             <span id="current-date"></span>
         </footer>
 
         <script src="js/home.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Cinzel']
+                }
+            });
+        </script>
     </body>
 </html>
