@@ -188,7 +188,11 @@ h5{
         grid-template-columns: 2fr 2fr;
     }
 
-    .left img{
+    .townCards img{
+        margin: auto;
+    }
+
+    .left {
         grid-column-start: 1;
         grid-row-start: 1;
     }
@@ -211,6 +215,10 @@ h5{
     main, footer{
         width: 90%;
         max-width: 960px;
+    }
+
+    h5{
+        font-size: 0.81em;
     }
 
     .contact-container{
