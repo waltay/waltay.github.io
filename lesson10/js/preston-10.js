@@ -180,3 +180,5 @@ fetch(apiURL)
   function toggleMenu() {
       document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
   }
+
+  document.getElementById("copyYear").innerHTML = year;
