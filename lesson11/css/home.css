@@ -130,6 +130,12 @@ h5{
     margin-bottom: 2%;
 }
 
+a{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 37.5em) {
     .navigation {
 		display: flex;
@@ -188,7 +194,15 @@ h5{
         grid-template-columns: 2fr 2fr;
     }
 
-    .left img{
+    .infoContainer {
+        margin: auto;
+    }
+
+    .townCards img{
+        margin: auto;
+    }
+
+    .left {
         grid-column-start: 1;
         grid-row-start: 1;
     }
@@ -211,6 +225,10 @@ h5{
     main, footer{
         width: 90%;
         max-width: 960px;
+    }
+
+    h5{
+        font-size: 0.79em;
     }
 
     .contact-container{

@@ -155,6 +155,12 @@ a{
     color: antiquewhite;
 }
 
+a{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 37.5em) {
     .navigation {
 		display: flex;

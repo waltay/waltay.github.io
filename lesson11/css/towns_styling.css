@@ -96,21 +96,7 @@ main h1{
     width: 100%;
 }
 
-.hero-summary{
-    position: relative;
-}
 
-#weather-summary{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: black;
-    opacity: 0.8;
-    color: white;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    padding-bottom: 2.5%;
-}
 
 #weather-summary h4{
     text-align: center;
@@ -216,6 +202,38 @@ hr{
     padding-bottom: 2%;
 }
 
+#notice {
+    background-color: #DB1F48;
+    color: #faebd7;
+    margin: 0;
+    padding: 16px 5px 16px 5px;
+    text-align: center;
+    font-size: 1em;
+}
+
+#notice p{
+    margin: 0;
+}
+
+a{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+#weather-summary{
+    top: 20px;
+    left: 20px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    width: fit-content;
+    margin: auto;
+}
+
 @media only screen and (min-width: 37.5em) {
 	.navigation {
 		display: flex;
@@ -290,6 +308,18 @@ hr{
 
     #contact-info{
         overflow: hidden;
+    }
+
+    #notice {
+        font-size: 1.5em;
+    }
+
+    .hero-summary{
+        position: relative;
+    }
+    
+    #weather-summary{
+        position: absolute;
     }
 }
 

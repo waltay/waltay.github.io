@@ -7,9 +7,9 @@ fetch(apiURL)
   .then((jsObject) => {
     console.log(jsObject);
     document.getElementById('currentDesc').textContent = jsObject.weather[0].main;
-    document.getElementById('temp').textContent = jsObject.main.temp.toFixed(2);
+    document.getElementById('temp').textContent = Math.round(jsObject.main.temp);
     document.getElementById('humidity').textContent = jsObject.main.humidity;
-    document.getElementById('windspeed').textContent = jsObject.wind.speed.toFixed(2);
+    document.getElementById('windspeed').textContent = Math.round(jsObject.wind.speed);
     document.getElementById('wind-chill').textContent = windchill(jsObject.main.temp, jsObject.wind.speed);
   });
 
@@ -93,7 +93,7 @@ fetch(apiURL)
     let windChill;
 
     if(temp <= 50.0 && speed >= 3.0){
-        windChill = (35.74 + (0.6215*temp) - (35.75 * Math.pow(speed,0.16)) + (0.4275*temp*Math.pow(speed,0.16))).toFixed(2);
+        windChill = Math.round((35.74 + (0.6215*temp) - (35.75 * Math.pow(speed,0.16)) + (0.4275*temp*Math.pow(speed,0.16))));
     }
     else[
         windChill = 'N/A'
@@ -108,6 +108,7 @@ fetch(apiURL)
   let month = d.getMonth() + 1;
   let date = d.getDate();
   let day = d.getDay();
+  const noticeDay = day;
   
   switch(month){
       case 1:
@@ -194,6 +195,7 @@ fetch(apiURL)
         if(townInfo[i].name == 'Preston'){
 
             for(i2 = 0; i2 < townInfo[i].events.length; i2++){
+
                 let p = document.createElement('p');
                 p.textContent = townInfo[i].events[i2];
 
@@ -204,3 +206,14 @@ fetch(apiURL)
 
     }
   });
+
+const notice = document.querySelector('#notice');
+
+if(noticeDay == 5){
+    notice.style.display = "block";
+}
+else{
+    notice.style.display = "none";
+}
+
+document.getElementById("copyYear").innerHTML = year;
