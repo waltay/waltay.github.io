@@ -76,3 +76,30 @@ function toggleMenu() {
 }
 
 document.getElementById("copyYear").innerHTML = year;
+
+if(localStorage.getItem("days-passed") === null){
+    createDaysPassed();
+}
+else{
+    calcAndSet();
+}
+
+function createDaysPassed(){
+    localStorage.setItem("days-passed", d);
+    calcAndSet();
+}
+
+function calcAndSet(){
+    var oldDate = new Date(localStorage.getItem("days-passed"));
+
+    const dayMilli = (1000 * 60 * 60 * 24);
+
+    var diffInTime = d.getTime() - oldDate.getTime();
+
+    var diffInDays = Math.round(diffInTime / dayMilli);
+
+    document.getElementById("days-passed").innerHTML = diffInDays;
+
+    localStorage.setItem("days-passed", d);
+
+}

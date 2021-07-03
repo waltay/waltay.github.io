@@ -106,7 +106,7 @@ footer{
     font-style: italic;
 }
 
-picture{
+#gallery-grid div{
     box-shadow: 0 5px 5px 5px rgba(0,0,0,0.2);
 }
 
@@ -182,11 +182,11 @@ a{
         grid-template-columns: 3fr 3fr 3fr;
     }
 
-    picture{
+    #gallery-grid div{
         transition: box-shadow .5s;
     }
 
-    picture:hover{
+    #gallery-grid div:hover{
         box-shadow: 0 7px 7px 7px rgba(0,0,0,0.6);
     }
 }
