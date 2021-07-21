@@ -1,0 +1,389 @@
+body {
+    font-family: 'Montserrat';
+}
+
+#weather-alert {
+    background-color: #FEFAE0;
+    color: #606C38;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    font-weight: bolder;
+}
+
+#weather-alert h3, p {
+    margin: 0;
+}
+
+#weather-alert a {
+    text-decoration: none;
+    font-size: 2em;
+    color: inherit;
+}
+
+header {
+    background-color: #606C38;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+    font-family: 'Ubuntu';
+    position: relative;
+}
+
+#title-logo {
+    margin: auto;
+    display: flex;
+    font-size: 0.8em;
+    color: #DDA15E;
+}
+
+#title-logo img {
+    float: left;
+    margin: auto;
+}
+
+#menuBtn {
+    margin: auto 15px auto 0px;
+    text-align: right;
+    text-decoration: none;
+    color: #DDA15E;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+#closeBtn {
+    text-align: left;
+    font-size: 2em;
+    padding-left: 10px;
+}
+
+#navigation a {
+    display: block;
+    text-align: center;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    color: #283618;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#navigation a:not(:first-of-type):hover {
+    background-color: #283618;
+    color: #FEFAE0;
+}
+
+.active {
+    text-decoration: underline #283618;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #283618;
+    color: #DDA15E;
+    margin: auto;
+}
+
+#footer-logoTitle {
+    display: flex;
+    margin: auto;
+    color: #FEFAE0;
+}
+
+#footer-logoTitle img {
+    float: left;
+}
+
+#fInfo {
+    text-align: center;
+}
+
+#contact {
+    display: block;
+}
+
+#socialMedia {
+    display: flex;
+}
+
+#weather-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    background-color: #283618;
+    color: #DDA15E;
+}
+
+#forecast-menu a {
+    text-decoration: none;
+    color: #DDA15E;
+}
+
+.forecast {
+    display: none;
+    background-color: #283618d3;
+    text-align: center;
+    padding: 10px;
+    color: #FEFAE0;
+}
+
+.forecast-shown {
+    display: block;
+}
+
+.forecast h3 {
+    margin-top: 0;
+    color: #BC6C25;
+}
+
+.forecast div {
+    padding: 10px;
+}
+
+.cityImg {
+    display: none;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.about p {
+    background-color: #FEFAE0;
+    font-weight: bold;
+}
+
+.swapped{
+    order: 2;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Ubuntu';
+}
+
+#joinBtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#joinBtn a:hover{
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #BC6C25;
+    color: #FEFAE0;
+}
+
+.clearBckgrd {
+    padding: 10px;
+    background-color: #FEFAE0;
+    color: #283618;
+}
+
+.clearBckgrd div {
+    width: 90%;
+    margin: auto;
+    font-weight: bolder;
+}
+
+.companies {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #606C38;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #FEFAE0;
+}
+
+.companies h2{
+    color: #DDA15E;
+}
+
+.compImg {
+    order: -1;
+}
+
+@media only screen and (max-width: 40em) {
+
+    #navigation {
+        height: 250px;
+        width: 0px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        background-color: #BC6C25;
+        transition: 0.6s;
+        display: block;
+        overflow: hidden;
+    }
+
+}
+
+@media only screen and (min-width: 40em) {
+    #menuBtn {
+        display: none;
+    }
+
+    #navigation a:first-child {
+        display: none;
+    }
+
+    #navigation {
+        margin: auto;
+    }
+
+    #navigation ul {
+        display: flex;
+    }
+
+    #navigation li {
+        margin: auto;
+    }
+
+    #navigation a {
+        margin: auto;
+        color: #DDA15E;
+        padding: 10px;
+    }
+
+    .active {
+        text-decoration: underline #DDA15E;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cityImg {
+        display: block;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+
+    .swapped {
+        order: 0;
+    }
+
+    #about-container {
+        display: flex;
+    }
+
+    .companies {
+        grid-template-columns: 1fr 1fr;
+        background-color:initial;
+        color: #283618;
+    }
+
+    .companies h3 {
+        color: #BC6C25;
+    }
+
+    #right {
+        order: 2;
+    }
+
+    #events {
+        background-color: #606C38;
+        border-radius: 10px;
+        padding: 10px;
+        color: #FEFAE0;
+    }
+
+    #events h2 {
+        margin-top: 0;
+        color: #DDA15E;
+    }
+
+    .forecast-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 10px;
+    }
+
+    #socialMedia {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+
+    body {
+        background-color: #FEFAE0;
+    }
+
+    #weather-data {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #forecast-menu {
+        display: none;
+    }
+
+    .forecast {
+        display: block;
+    }
+
+    .forecast-data {
+        display: flex;
+        margin: auto;
+    }
+
+    .forecast-data p {
+        padding: 0 5px 0 5px;
+    }
+
+    #comp-container {
+        width: 90%;
+        margin: auto;
+        border-radius: 10px;
+        background-color: #283618;
+        color: #BC6C25;
+    }
+
+    #comp-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .companies {
+        color: #DDA15E;
+        grid-template-columns: 1fr;
+    }
+
+    .compImg {
+        order: 2;
+        margin-top: 10px;
+    }
+
+    #events {
+        width: 50%;
+    }
+
+}

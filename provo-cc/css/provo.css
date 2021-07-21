@@ -1,0 +1,183 @@
+body {
+    font-family: 'Montserrat';
+}
+
+#weather-alert {
+    background-color: #FEFAE0;
+    color: #606C38;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    font-weight: bolder;
+}
+
+#weather-alert h3, p {
+    margin: 0;
+}
+
+#weather-alert a {
+    text-decoration: none;
+    font-size: 2em;
+    color: inherit;
+}
+
+header {
+    background-color: #606C38;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+    font-family: 'Ubuntu';
+    position: relative;
+}
+
+#title-logo {
+    margin: auto;
+    display: flex;
+    font-size: 0.8em;
+    color: #DDA15E;
+}
+
+#title-logo img {
+    float: left;
+    margin: auto;
+}
+
+#menuBtn {
+    margin: auto 15px auto 0px;
+    text-align: right;
+    text-decoration: none;
+    color: #DDA15E;
+}
+
+#navigation ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+#closeBtn {
+    text-align: left;
+    font-size: 2em;
+    padding-left: 10px;
+}
+
+#navigation a {
+    display: block;
+    text-align: center;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    color: #283618;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#navigation a:not(:first-of-type):hover {
+    background-color: #283618;
+    color: #FEFAE0;
+}
+
+.active {
+    text-decoration: underline #283618;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #283618;
+    color: #DDA15E;
+    margin: auto;
+}
+
+#footer-logoTitle {
+    display: flex;
+    margin: auto;
+    color: #FEFAE0;
+}
+
+#footer-logoTitle img {
+    float: left;
+}
+
+#fInfo {
+    text-align: center;
+}
+
+#contact {
+    display: block;
+}
+
+#socialMedia {
+    display: flex;
+}
+
+@media only screen and (max-width: 40em) {
+
+    #navigation {
+        height: 250px;
+        width: 0px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        background-color: #BC6C25;
+        transition: 0.6s;
+        display: block;
+        overflow: hidden;
+    }
+
+}
+
+@media only screen and (min-width: 40em) {
+
+    #menuBtn {
+        display: none;
+    }
+
+    #navigation a:first-child {
+        display: none;
+    }
+
+    #navigation {
+        margin: auto;
+    }
+
+    #navigation ul {
+        display: flex;
+    }
+
+    #navigation li {
+        margin: auto;
+    }
+
+    #navigation a {
+        margin: auto;
+        color: #DDA15E;
+        padding: 10px;
+    }
+
+    .active {
+        text-decoration: underline #DDA15E;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 10px;
+    }
+
+    #socialMedia {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media only screen and (min-width: 64em) {
+
+}

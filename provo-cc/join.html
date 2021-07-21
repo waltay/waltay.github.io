@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Provo Chamber of Commerce - Walter Taylor</title>
+        <meta name="description" content="This page serves as Walter Taylor's Final Project's home page for WDD 230 - Web Frontend Development at BYU-Idaho">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/join.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div id="title-logo">
+                <img src="" alt="Provo Chamber of Commerce's Logo">
+                <h1>Provo Chamber of Commerce</h1>
+            </div>
+
+            <a href="#" id="menuBtn" onclick="openMenu()">&#9776; Menu</a>
+
+            <nav id="navigation">
+                <ul>
+                    <a href="#"><li id="closeBtn" onclick="closeMenu()">&times;</li></a>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="provo.html"><li>Provo</li></a>
+                    <a href="#"><li  class="active">Join</li></a>
+                    <a href="directory.html"><li>Directory</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <div id="joinInfo">
+                <h2>Why Join?</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet dui vitae enim 
+                    egestas condimentum a pretium urna. Sed sed suscipit orci. Sed eu dui at tellus hendrerit finibus 
+                    non quis urna. Phasellus vitae venenatis lectus. Proin at vehicula dolor. Proin ac lobortis sem. 
+                    Suspendisse potenti. In hac habitasse platea dictumst. Etiam pellentesque ultricies odio, consequat 
+                    rhoncus velit placerat quis. Donec lobortis ac ligula non fermentum. Donec id pretium lectus, sed 
+                    placerat purus. Integer id tortor ornare, auctor urna eu, dictum lectus.
+                </p>
+            </div>
+
+            <h1>Join Us!</h1>
+            <form method="GET" action="join-conf.html">
+                <div id="large-form">
+                    <fieldset>
+                        <legend>Owner/CEO Information</legend>
+                        <label>First Name*<input type="text" name="firstName" pattern="[A-Za-z]" required></label>
+                        <label>Last Name*<input type="text" name="lastName" pattern="[A-Za-z]" required></label>
+                        <label>Title <input type="text" name="title" pattern="[A-Za-z]"></label>
+                        <label>Email*<input type="email" name="email" placeholder="example@domain.com" required></label>
+                        <label>Cell Phone<input type="tel" name="cellPhone"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label>Business Name*<input type="text" name="busName" required></label>
+                        <label>Business Address<input type="text" name="busAddress" pattern="[A-Za-z0-9]+"></label>
+                        <label>Business Website<input type="url" placeholder="https://example.com" pattern="https://.*"></label>
+                        <label>
+                            Business Description
+                            <textarea name="busDescription" placeholder="Describe your business..."></textarea>
+                        </label>
+                    </fieldset>
+                </div>
+                <fieldset>
+                    <legend>Select a Membership Tier</legend>
+                    <label class="rTier"><input  type="radio" name="tier" value="Non-Profit" required>Non-Profit - $100</label>
+                    <label class="rTier"><input  type="radio" name="tier" value="Bronze" required>Bronze - $200</label>
+                    <label class="rTier"><input  type="radio" name="tier" value="Silver" required>Silver - $400</label>
+                    <label class="rTier"><input  type="radio" name="tier" value="Gold" required>Gold - $1000</label>
+                </fieldset>
+                <div id="submit">
+                    <input type="submit" name="submitBtn" value="Join Now!" id="submitBtn">
+                </div>
+            </form>
+
+            <section id="tier-section">
+                <h2>Membership Tiers</h2>
+                <hr>
+                <div id="tier-container">
+                    <div class="tiers">
+                        <h3 class="hTier">Non-Profit</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet dui vitae enim egestas 
+                            condimentum a pretium urna. Sed sed suscipit orci. Sed eu dui at tellus hendrerit finibus non quis 
+                            urna. Phasellus vitae venenatis lectus. Proin at vehicula dolor. Proin ac lobortis sem. Suspendisse 
+                            potenti. In hac habitasse platea dictumst. Etiam pellentesque ultricies odio, consequat rhoncus velit 
+                            placerat quis. Donec lobortis ac ligula non fermentum. Donec id pretium lectus, sed placerat purus. 
+                            Integer id tortor ornare, auctor urna eu, dictum lectus.
+                        </p>
+                        <h3 class="price">$100</h3>
+                    </div>
+                    <div class="tiers">
+                        <h3 class="hTier">Bronze</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet dui vitae enim egestas 
+                            condimentum a pretium urna. Sed sed suscipit orci. Sed eu dui at tellus hendrerit finibus non quis 
+                            urna. Phasellus vitae venenatis lectus. Proin at vehicula dolor. Proin ac lobortis sem. Suspendisse 
+                            potenti. In hac habitasse platea dictumst. Etiam pellentesque ultricies odio, consequat rhoncus velit 
+                            placerat quis. Donec lobortis ac ligula non fermentum. Donec id pretium lectus, sed placerat purus. 
+                            Integer id tortor ornare, auctor urna eu, dictum lectus.
+                        </p>
+                        <h3 class="price">$200</h3>
+                    </div>
+                    <div class="tiers">
+                        <h3 class="hTier">Silver</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet dui vitae enim egestas 
+                            condimentum a pretium urna. Sed sed suscipit orci. Sed eu dui at tellus hendrerit finibus non quis 
+                            urna. Phasellus vitae venenatis lectus. Proin at vehicula dolor. Proin ac lobortis sem. Suspendisse 
+                            potenti. In hac habitasse platea dictumst. Etiam pellentesque ultricies odio, consequat rhoncus velit 
+                            placerat quis. Donec lobortis ac ligula non fermentum. Donec id pretium lectus, sed placerat purus. 
+                            Integer id tortor ornare, auctor urna eu, dictum lectus.
+                        </p>
+                        <h3 class="price">$400</h3>
+                    </div>
+                    <div class="tiers">
+                        <h3 class="hTier">Gold</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet dui vitae enim egestas 
+                            condimentum a pretium urna. Sed sed suscipit orci. Sed eu dui at tellus hendrerit finibus non quis 
+                            urna. Phasellus vitae venenatis lectus. Proin at vehicula dolor. Proin ac lobortis sem. Suspendisse 
+                            potenti. In hac habitasse platea dictumst. Etiam pellentesque ultricies odio, consequat rhoncus velit 
+                            placerat quis. Donec lobortis ac ligula non fermentum. Donec id pretium lectus, sed placerat purus. 
+                            Integer id tortor ornare, auctor urna eu, dictum lectus.
+                        </p>
+                        <h3 class="price">$1000</h3>
+                    </div>
+                    
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div id="footer-logoTitle">
+                <img src="" alt="Provo Chamber of Commerce Logo">
+                <h4>Provo Chamber of Commerce</h4>
+            </div>
+            <div id="fInfo">
+                <p>Footer Info</p>
+            </div>
+            <div id="contact">
+                <div id="contact-info">
+                    <h4>Contact</h4>
+                    <p>Contact Info</p>
+                </div>
+                <div id="socialMedia">
+                    <a href=""><img src="" alt="Provo Chamber of Commerce Facebook Link"></a>
+                    <a href=""><img src="" alt="Provo Chamber of Commerce Instagram Link"></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/join.js"></script>
+    </body>
+
+
+</html>
