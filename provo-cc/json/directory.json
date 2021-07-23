@@ -12,56 +12,56 @@
             "name": "Lakeside Automotive",
             "phone": "801-616-3557",
             "email": "lakesideserviceprovo@gmail.com",
-            "path": "images/pawalek.png",
-            "desc": "Lakeside Automotive's Logo",
+            "imgPath": "images/lakeside.jpg",
+            "imgDesc": "Lakeside Automotive's Logo",
             "website": "https://www.lakesideservicerepair.com/"
         },
         {
             "name": "Bombay House",
             "phone": "801-373-6677",
             "email": "contact@bombayhouse.com",
-            "path": "images/bombay.jpg",
-            "desc": "Bombay House's Logo",
+            "imgPath": "images/bombay.jpg",
+            "imgDesc": "Bombay House's Logo",
             "website": "https://bombayhouse.com/"
         },
         {
             "name": "Salsa Chocolate",
             "phone": "801-616-6046",
             "email": "reservations@southworthhall.com",
-            "path": "images/salsa.jpg",
-            "desc": "Salsa Chocolate's Logo",
+            "imgPath": "images/salsa.jpg",
+            "imgDesc": "Salsa Chocolate's Logo",
             "website": "https://salsachocolateprovo.com/"
         },
         {
             "name": "Taylor Custom Rings",
             "phone": "801-357-9151",
             "email": "taylorcustomrings@gmail.com",
-            "path": "images/taylor.jpg",
-            "desc": "Taylor Custom Rings' Logo",
+            "imgPath": "images/taylor.jpg",
+            "imgDesc": "Taylor Custom Rings' Logo",
             "website": "https://www.taylorcustomrings.com/"
         },
         {
             "name": "The Yoga Underground",
             "phone": "801-477-6281",
             "email": "yogaundergroundutah@gmail.com",
-            "path": "images/yoga.jpg",
-            "desc": "The Yoga Underground's Logo",
+            "imgPath": "images/yoga.jpg",
+            "imgDesc": "The Yoga Underground's Logo",
             "website": "https://yogaundergroundutah.com/"
         },
         {
             "name": "The Man Barber",
             "phone": "801-896-7163",
             "email": "themanbarber@gmail.com",
-            "path": "images/manbarber.jpg",
-            "desc": "The Man Barber's Logo",
+            "imgPath": "images/manbarber.jpg",
+            "imgDesc": "The Man Barber's Logo",
             "website": "https://www.themanbarber.com/"
         },
         {
             "name": "Park Animal Hospital",
             "phone": "801-374-0622",
             "email": "Parkanimalhospital@gmail.com",
-            "path": "images/animal.jpg",
-            "desc": "Park Animal Hospital's Logo",
+            "imgPath": "images/animal.jpg",
+            "imgDesc": "Park Animal Hospital's Logo",
             "website": "https://parkanimalhospital.net/"
         }
     ]
