@@ -1,17 +1,21 @@
 function openMenu(){
-    document.getElementById("navigation").style.width = '240px';
+    let l = document.getElementById("navigation");
+    l.classList.add("navigation-small");
 }
 
 function closeMenu(){
-    document.getElementById("navigation").style.width = '0px';
+    let l = document.getElementById("navigation");
+    l.classList.remove("navigation-small");
 }
 
 function dropdown(){
     
-    document.getElementsByClassName("forecast").classList.toggle("forecast-shown");
+    document.getElementsByClassName("forecast")[0].classList.toggle("forecast-shown");
+
+    document.getElementsByClassName("arrow")[0].classList.toggle("arrow-rotate");
 
 }
 
 function closeAlert(){
-    document.getElementById("weather-alert").setAttribute('display', 'none');
+    document.getElementById("weather-alert").style.display = "none";
 }

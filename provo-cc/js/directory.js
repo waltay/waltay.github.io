@@ -1,18 +1,35 @@
 function openMenu(){
-    document.getElementById("navigation").style.width = '240px';
+    let l = document.getElementById("navigation");
+    l.classList.add("navigation-small");
 }
 
 function closeMenu() {
-    document.getElementById("navigation").style.width = '0px';
+    let l = document.getElementById("navigation");
+    l.classList.remove("navigation-small");
 }
 
 function change2grid() {
-    document.getElementsByClassName("directory-list").className = "directory-container";
-    document.getElementsByClassName("business-list").className = "business";
+    let l = document.getElementById("directory-container");
+    l.classList.add("directory-grid");
+    l.classList.remove("directory-list");
+    let l2 = document.getElementsByClassName("business-list");
+    
+    l2.array.forEach(element => {
+        element.classList.add("business");
+        element.classList.remove("business-list");
+    });
 }
 
 function change2list() {
-    document.getElementsByClassName("directory-container").className = "directory-list";
-    document.getElementsByClassName("business").className = "business-list";
+    let l = document.getElementById("directory-container");
+    l.classList.add("directory-list");
+    l.classList.remove("directory-grid");
+    let l2 = document.getElementsByClassName("business");
+    
+    l2.array.forEach(element => {
+        element.classList.add("business-list");
+        element.classList.remove("business");
+    });
+    
 }
 

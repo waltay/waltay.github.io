@@ -1,7 +1,9 @@
 function openMenu(){
-    document.getElementById("navigation").style.width = '240px';
+    let l = document.getElementById("navigation");
+    l.classList.add("navigation-small");
 }
 
 function closeMenu(){
-    document.getElementById("navigation").style.width = '0px';
+    let l = document.getElementById("navigation");
+    l.classList.remove("navigation-small");
 }
