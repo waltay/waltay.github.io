@@ -9,7 +9,7 @@ fetch(directory)
 
     business.forEach(element => {
         let div = document.createElement('div');
-        let img = document.createElement('img');
+        let image = document.createElement('img');
         let innerDiv = document.createElement('div');
         let h2 = document.createElement('h2');
         let hr = document.createElement('hr');
@@ -33,11 +33,13 @@ fetch(directory)
         innerDiv.appendChild(website);
 
         div.setAttribute('class', 'business');
-        img.setAttribute('src', element.img-path);
-        img.setAttribute('alt', element.img-description);
+        image.setAttribute('src', element.imgPath);
+        image.setAttribute('alt', element.imgDesc);
 
-        div.appendChild(img);
+        div.appendChild(image);
         div.appendChild(innerDiv);
+
+        console.log(div);
 
         let l = document.getElementById("directory-container");
         l.appendChild(div);

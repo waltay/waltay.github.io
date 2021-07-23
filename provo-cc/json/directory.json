@@ -4,64 +4,64 @@
             "name": "Pawelek & Gale Attorneys At Law",
             "phone": "801-362-9996",
             "email": "dennis@paweleklaw.com",
-            "img-path": "images/pawelek.jpg",
-            "img-description": "Pawelek & Gale Attorneys At Law logo",
+            "imgPath": "images/pawalek.png",
+            "imgDesc": "Pawelek & Gale Attorneys At Law logo",
             "website": "https://www.paweleklaw.com/"
         },
         {
             "name": "Lakeside Automotive",
             "phone": "801-616-3557",
             "email": "lakesideserviceprovo@gmail.com",
-            "img-path": "images/lakeside.jpg",
-            "img-description": "Lakeside Automotive's Logo",
+            "path": "images/lakeside.jpg",
+            "desc": "Lakeside Automotive's Logo",
             "website": "https://www.lakesideservicerepair.com/"
         },
         {
             "name": "Bombay House",
             "phone": "801-373-6677",
             "email": "contact@bombayhouse.com",
-            "img-path": "images/bombay.jpg",
-            "img-description": "Bombay House's Logo",
+            "path": "images/bombay.jpg",
+            "desc": "Bombay House's Logo",
             "website": "https://bombayhouse.com/"
         },
         {
             "name": "Salsa Chocolate",
             "phone": "801-616-6046",
             "email": "reservations@southworthhall.com",
-            "img-path": "images/salsa.jpg",
-            "img-description": "Salsa Chocolate's Logo",
+            "path": "images/salsa.jpg",
+            "desc": "Salsa Chocolate's Logo",
             "website": "https://salsachocolateprovo.com/"
         },
         {
             "name": "Taylor Custom Rings",
             "phone": "801-357-9151",
             "email": "taylorcustomrings@gmail.com",
-            "img-path": "images/taylor.jpg",
-            "img-description": "Taylor Custom Rings' Logo",
+            "path": "images/taylor.jpg",
+            "desc": "Taylor Custom Rings' Logo",
             "website": "https://www.taylorcustomrings.com/"
         },
         {
             "name": "The Yoga Underground",
             "phone": "801-477-6281",
             "email": "yogaundergroundutah@gmail.com",
-            "img-path": "images/yoga.jpg",
-            "img-description": "The Yoga Underground's Logo",
+            "path": "images/yoga.jpg",
+            "desc": "The Yoga Underground's Logo",
             "website": "https://yogaundergroundutah.com/"
         },
         {
             "name": "The Man Barber",
             "phone": "801-896-7163",
             "email": "themanbarber@gmail.com",
-            "img-path": "images/manbarber.jpg",
-            "img-description": "The Man Barber's Logo",
+            "path": "images/manbarber.jpg",
+            "desc": "The Man Barber's Logo",
             "website": "https://www.themanbarber.com/"
         },
         {
             "name": "Park Animal Hospital",
             "phone": "801-374-0622",
             "email": "Parkanimalhospital@gmail.com",
-            "img-path": "images/animal.jpg",
-            "img-description": "Park Animal Hospital's Logo",
+            "path": "images/animal.jpg",
+            "desc": "Park Animal Hospital's Logo",
             "website": "https://parkanimalhospital.net/"
         }
     ]
