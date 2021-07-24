@@ -94,9 +94,14 @@ header {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 5px;
     background-color: #283618;
     color: #DDA15E;
     margin: auto;
+}
+
+#footer-logoTitle h4 {
+    text-align: left;
 }
 
 #footer-logoTitle {
@@ -115,10 +120,12 @@ footer {
 
 #contact {
     display: block;
+    padding-right: 5px;
 }
 
 #socialMedia {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #weather-data {
@@ -156,7 +163,7 @@ footer {
     padding: 10px;
 }
 
-.cityImg {
+.about div {
     display: none;
 }
 
@@ -233,6 +240,32 @@ main {
     order: -1;
 }
 
+.large-forecast {
+    display: none;
+}
+
+#socialMedia img {
+    width: 36.5px;
+}
+
+#socialMedia div {
+    margin: auto;
+}
+
+#fInfo a{
+    color: #FEFAE0;
+}
+
+#fInfo {
+    position: relative;
+}
+
+#fInfo p{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
 @media only screen and (max-width: 40em) {
 
     .navigation-small {
@@ -285,13 +318,21 @@ main {
         grid-template-columns: 1fr 1fr;
     }
 
-    .cityImg {
+    .about div {
         display: block;
+        width: 80%;
+        margin: 0 auto 0 auto;
+    }
+
+    .cityImg {
+        width: 100%;
+        
     }
 
     .about {
         grid-template-columns: 1fr;
-        margin: auto;
+        grid-auto-rows: auto;
+        margin: 0 auto 0 auto;
     }
 
     .about p {
@@ -303,7 +344,11 @@ main {
     }
 
     #about-container {
-        display: flex;
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
     }
 
     .companies {
@@ -338,14 +383,16 @@ main {
     }
 
     #contact {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        margin-left: auto;
+        margin-right: 10px;
         padding-bottom: 10px;
     }
 
     #socialMedia {
         display: grid;
         grid-template-columns: 1fr;
+        margin-left: 15px;
     }
 }
 
@@ -401,6 +448,10 @@ main {
 
     #events {
         width: 50%;
+    }
+
+    .large-forecast {
+        display: inline;
     }
 
 }
