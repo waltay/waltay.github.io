@@ -39,9 +39,15 @@ header {
     color: #DDA15E;
 }
 
-#title-logo img {
+#logo  {
     float: left;
     margin: auto;
+    margin-left: 10px;
+    max-width: 100px;
+}
+
+#logo img {
+    width: 100%;
 }
 
 #menuBtn {
@@ -105,8 +111,14 @@ footer {
     color: #FEFAE0;
 }
 
-#footer-logoTitle img {
+#fLogo {
     float: left;
+    margin: auto;
+    max-width: 50px;
+}
+
+#fLogo img {
+    width: 100%;
 }
 
 #fInfo {
@@ -182,7 +194,7 @@ h2 {
     background-color: #DDA15E;
     color: #283618;
     width: 80%;
-    margin: auto;
+    margin: 0 auto 0 auto;
     padding: 10px;
     font-weight: bolder;
     border-radius: 10px;
@@ -257,6 +269,14 @@ h5 {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
+}
+
+.img-container {
+    width: 100%;
+}
+
+.img-container img {
+    width: 100%;
 }
 
 @media only screen and (max-width: 40em) {
@@ -340,7 +360,7 @@ h5 {
         width: 80%;
     }
 
-    .swapped img {
+    .swapped .img-container {
         order: 2;
     }
 
@@ -352,7 +372,8 @@ h5 {
     .visit {
         padding: 20px;
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5px;
     }
 
     .visit h4 {
@@ -361,11 +382,16 @@ h5 {
 
     .swapped {
         background-color: #606C38;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .dem-disclaimer {
         width: 50%;
+    }
+
+    .img-container {
+        max-width: 300px;
+        margin: auto;
     }
 
 }

@@ -42,9 +42,15 @@ header {
     color: #DDA15E;
 }
 
-#title-logo img {
+#logo  {
     float: left;
     margin: auto;
+    margin-left: 10px;
+    max-width: 100px;
+}
+
+#logo img {
+    width: 100%;
 }
 
 #menuBtn {
@@ -107,8 +113,14 @@ footer {
     color: #FEFAE0;
 }
 
-#footer-logoTitle img {
+#fLogo {
     float: left;
+    margin: auto;
+    max-width: 50px;
+}
+
+#fLogo img {
+    width: 100%;
 }
 
 #fInfo {
@@ -261,6 +273,16 @@ iframe {
     top: 50%;
     transform: translate(0, -50%);
     text-align: center;
+}
+
+.img-container {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.img-container img {
+    width: 100%;
 }
 
 @media only screen and (max-width: 40em) {

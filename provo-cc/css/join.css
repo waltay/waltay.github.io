@@ -42,9 +42,15 @@ header {
     color: #DDA15E;
 }
 
-#title-logo img {
+#logo  {
     float: left;
     margin: auto;
+    margin-left: 10px;
+    max-width: 100px;
+}
+
+#logo img {
+    width: 100%;
 }
 
 #menuBtn {
@@ -95,7 +101,7 @@ footer {
     grid-column-gap: 5px;
     background-color: #283618;
     color: #DDA15E;
-    margin: auto auto 0 auto;
+    margin: auto 0 0 0;
 }
 
 #footer-logoTitle h4 {
@@ -108,8 +114,14 @@ footer {
     color: #FEFAE0;
 }
 
-#footer-logoTitle img {
+#fLogo {
     float: left;
+    margin: auto;
+    max-width: 50px;
+}
+
+#fLogo img {
+    width: 100%;
 }
 
 #fInfo {

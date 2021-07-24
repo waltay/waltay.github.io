@@ -3,7 +3,6 @@ const directory = 'https://waltay.github.io/provo-cc/json/directory.json';
 fetch(directory)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     
     const business = jsObject['business'];
 
@@ -16,6 +15,7 @@ fetch(directory)
         let email = document.createElement('p');
         let phone = document.createElement('p');
         let website = document.createElement('a');
+        let imgDiv = document.createElement('div');
 
         innerDiv.setAttribute('class', 'busInfo');
         h2.textContent = element.name;
@@ -33,13 +33,14 @@ fetch(directory)
         innerDiv.appendChild(website);
 
         div.setAttribute('class', 'business');
+        imgDiv.setAttribute('class', 'img-container');
         image.setAttribute('src', element.imgPath);
         image.setAttribute('alt', element.imgDesc);
 
-        div.appendChild(image);
-        div.appendChild(innerDiv);
+        imgDiv.appendChild(image);
 
-        console.log(div);
+        div.appendChild(imgDiv);
+        div.appendChild(innerDiv);
 
         let l = document.getElementById("directory-container");
         l.appendChild(div);
@@ -64,10 +65,11 @@ function change2grid() {
     l.classList.remove("directory-list");
     let l2 = document.getElementsByClassName("business-list");
     
-    l2.array.forEach(element => {
-        element.classList.add("business");
-        element.classList.remove("business-list");
-    });
+    for(var i = 0; i < l2.length; i) {
+        console.log(i);
+        l2[i].classList.add("business");
+        l2[i].classList.remove("business-list");
+    }
 }
 
 function change2list() {
@@ -75,9 +77,28 @@ function change2list() {
     l.classList.add("directory-list");
     l.classList.remove("directory-grid");
     let l2 = document.getElementsByClassName("business");
+
+    console.log(l2.length);
+
     
-    l2.array.forEach(element => {
-        element.classList.add("business-list");
-        element.classList.remove("business");
-    });
+    for(var i = 0; i < l2.length; i) {
+        console.log(l2[i]);
+        console.log(l2);
+        l2[i].classList.add("business-list");
+        l2[i].classList.remove("business");
+    }
+}
+
+var mq = window.matchMedia( "(max-width: 40em)" );
+if (mq.matches) {
+    let l = document.getElementById("directory-container");
+    l.classList.add("directory-grid");
+    l.classList.remove("directory-list");
+    let l2 = document.getElementsByClassName("business-list");
+    
+    for(var i = 0; i < l2.length; i) {
+        console.log(i);
+        l2[i].classList.add("business");
+        l2[i].classList.remove("business-list");
+    }
 }

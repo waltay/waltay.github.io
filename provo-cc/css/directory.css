@@ -39,9 +39,15 @@ header {
     color: #DDA15E;
 }
 
-#title-logo img {
+#logo  {
     float: left;
     margin: auto;
+    margin-left: 10px;
+    max-width: 100px;
+}
+
+#logo img {
+    width: 100%;
 }
 
 #menuBtn {
@@ -105,8 +111,14 @@ footer {
     color: #FEFAE0;
 }
 
-#footer-logoTitle img {
+#fLogo {
     float: left;
+    margin: auto;
+    max-width: 50px;
+}
+
+#fLogo img {
+    width: 100%;
 }
 
 #fInfo {
@@ -189,6 +201,22 @@ p {
     top: 50%;
     transform: translate(0, -50%);
     text-align: center;
+}
+
+
+.img-container {
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+a{
+    color: #DDA15E;
+    font-weight: bolder;
 }
 
 @media only screen and (max-width: 40em) {
@@ -276,23 +304,40 @@ p {
 
     .directory-grid {
         grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
         grid-column-gap: 15px;
         margin-top: 20px;
     }
 
     .business {
         width: 85%;
-        min-height: 150px;
+        margin: 0;
     }
 
     .directory-list {
-        grid-template-columns: 1fr;
-        width: 70%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 15px;
+        width: 90%;
+        margin: auto;
     }
 
     .business-list {
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+        text-align: right;
+        border: solid #DDA15E;
+        border-radius: 10px;
+        background-color: #606C38;
+        margin: 0;
+        padding: 15px;
+    }
+
+
+
+    .business-list h2 {
+        color: #DDA15E;
     }
 
 }
@@ -301,6 +346,14 @@ p {
 
     .directory-grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .directory-list {
+        width: 80%;
+    }
+
+    .business-list {
+        grid-template-columns: 1fr 2fr;
     }
 
 }
